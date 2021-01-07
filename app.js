@@ -49,8 +49,8 @@ app.post('/create-razor-pay-order', (req, res) => {
     res.json({ status: 'error', error: err });
   });
 });
-
-app.listen(5000, (err) => {
+const port = process.env.PORT || 5000;
+app.listen(port, (err) => {
   if (err) {
     console.log(err);
   }

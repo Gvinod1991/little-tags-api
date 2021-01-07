@@ -18,6 +18,7 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Headers', '*');
   next();
 });
+app.options('*', cors());
 app.use(cors());
 /** Body parser setup */
 

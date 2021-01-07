@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(bodyParser.json());
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
   res.json({ status: 'success', message: 'Little tag backend api!' });
 });
 

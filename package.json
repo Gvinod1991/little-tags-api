@@ -6,6 +6,10 @@
   "repository": "https://github.com/Gvinod1991/little-tags-api.git",
   "author": "Godti Vinod <venkat.godti3@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",

@@ -6,8 +6,8 @@ const Razorpay = require('razorpay');
 require('dotenv').config();
 
 const instance = new Razorpay({
-  key_id: process.env.RAZOR_PAY_KEY,
-  key_secret: process.env.RAZOR_PAY_SECRET,
+  key_id:"rzp_test_B8z0h0tSwehzlt",
+  key_secret: "PcAzv1To38bOPQ71CfXLamVa",
 });
 
 const app = express();
@@ -50,9 +50,9 @@ app.post('/create-razor-pay-order', (req, res) => {
   });
 });
 
-app.listen(process.env.PORT, (err) => {
+app.listen(5000, (err) => {
   if (err) {
     console.log(err);
   }
-  console.log(`Server running on port ${process.env.PORT}`);
+  console.log(`Server running on port 5000`);
 });

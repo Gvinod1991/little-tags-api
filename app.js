@@ -27,6 +27,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(bodyParser.json());
 
+app.post('/', (req, res) => {
+  res.json({ status: 'success', message: 'Little tag backend api!' });
+});
+
 app.post('/create-razor-pay-order', (req, res) => {
   const { amount, currency } = req.body;
 
